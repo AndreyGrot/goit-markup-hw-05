@@ -152,7 +152,7 @@ svg{
 
 }
 
-.site-nav .item:first-child::after{
+.current-page::after{
     position: absolute;
 
     content: '';
@@ -763,7 +763,7 @@ svg{
     justify-content: center;
     align-items: center;
 
-    width: 30px;
+    min-width: 30px;
     height: 30px;
     
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -882,6 +882,7 @@ svg{
 
 .content-list .item:hover .explanation-text{
     opacity: 1;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-border{
